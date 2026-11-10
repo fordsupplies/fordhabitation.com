@@ -8,7 +8,8 @@ const assets = new Map([
   ['/styles.css', ['styles.css', 'text/css; charset=utf-8']],
   ['/site.js', ['site.js', 'text/javascript; charset=utf-8']],
   ['/assets/logo-ford-habitation-transparent.png', ['assets/logo-ford-habitation-transparent.png', 'image/png']],
-  ['/assets/maison-illustration.jpg', ['assets/maison-illustration.jpg', 'image/jpeg']]
+  ['/assets/maison-illustration.jpg', ['assets/maison-illustration.jpg', 'image/jpeg']],
+  ['/assets/maison-prestige-apercu.jpg', ['assets/maison-prestige-apercu.jpg', 'image/jpeg']]
 ]);
 const fieldLimits = { nom: 100, courriel: 150, telephone: 35, ville: 100, service: 100, projet: 1500 };
 
