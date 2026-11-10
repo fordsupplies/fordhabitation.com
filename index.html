@@ -6,7 +6,7 @@
   <meta name="description" content="Construction et rénovation résidentielle et commerciale depuis 2015, dans Lanaudière et le Grand Montréal. Demandez une soumission gratuite.">
   <title>Ford Habitation | Construction et rénovation</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="site.js" defer></script>
+  <script src="site.js?v=formspree" defer></script>
 </head>
 <body>
   <a class="skip" href="#contenu">Aller au contenu</a>
@@ -248,10 +248,10 @@
         <p>Indiquez la ville, le type de travaux et les détails que vous connaissez déjà. Nous pourrons ainsi mieux comprendre votre projet et vous recontacter.</p>
         <div class="contact"><a href="tel:+15147958193">514 795-8193</a><a href="mailto:fordhabitation@hotmail.com">fordhabitation@hotmail.com</a></div>
       </div>
-      <form id="quote-form" hidden>
+      <form id="quote-form" action="https://formspree.io/f/meagjqoz" method="post">
         <div class="fields">
           <label>Nom complet <input name="nom" autocomplete="name" required maxlength="100"></label>
-          <label>Courriel <input type="email" name="courriel" autocomplete="email" required maxlength="150"></label>
+          <label>Courriel <input type="email" name="email" autocomplete="email" required maxlength="150"></label>
           <label>Téléphone <small>(facultatif)</small><input type="tel" name="telephone" autocomplete="tel" maxlength="35"></label>
           <label>Ville du projet <input name="ville" required maxlength="100"></label>
           <label class="wide">Type de travaux

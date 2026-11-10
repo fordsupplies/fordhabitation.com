@@ -1,8 +1,6 @@
 const form = document.querySelector('#quote-form');
 const quoteNote = document.querySelector('#form-note');
 const quoteButton = form.querySelector('button[type="submit"]');
-// GitHub Pages serves the public site without the Node.js quote endpoint.
-form.hidden = window.location.hostname === 'fordsupplies.github.io';
 
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
@@ -12,10 +10,10 @@ form.addEventListener('submit', async (event) => {
   quoteNote.textContent = 'Envoi de la demande en cours…';
 
   try {
-    const response = await fetch('/api/soumission', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(Object.fromEntries(new FormData(form)))
+    const response = await fetch(form.action, {
+      method: form.method,
+      headers: { Accept: 'application/json' },
+      body: new FormData(form)
     });
 
     if (!response.ok) throw new Error('Quote delivery failed');
