@@ -1,7 +1,8 @@
 const form = document.querySelector('#quote-form');
 const quoteNote = document.querySelector('#form-note');
 const quoteButton = form.querySelector('button[type="submit"]');
-form.hidden = false;
+// GitHub Pages serves the public site without the Node.js quote endpoint.
+form.hidden = window.location.hostname === 'fordsupplies.github.io';
 
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
